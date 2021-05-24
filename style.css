@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+#mainContainer {
+  height: 55rem;
+  /* border: 1px solid black; */
+  width: 120rem;
+  margin: auto;
+  margin-top: 3rem;
+  display: flex;
+}
+.leftForm {
+  width: 25%;
+  border: 1px solid black;
+  height: 100%;
+}
+.leftForm label {
+  display: block;
+  margin-top: 1.2rem;
+  font-weight: 900;
+}
+.leftForm .form {
+  /* border: 1px solid black; */
+  height: 80%;
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+.leftForm input {
+  width: 21rem;
+  height: 2em;
+}
+
+.leftForm button {
+  display: block;
+  height: 3rem;
+  width: 18rem;
+  margin-top: 2rem;
+  /* margin-left: 2rem; */
+  font-size: 1.5rem;
+  border: 1px solid black;
+  color: rgb(24, 216, 24);
+  background: white;
+  font-weight: 900;
+  transition: 0.5s;
+}
+.leftForm button:hover {
+  background: rgb(24, 216, 24);
+  color: whitesmoke;
+  border: none;
+  transition: 0.3s;
+}
+.leftForm button:active {
+  width: 19rem;
+  height: 4rem;
+  font-size: 2rem;
+  transition: 0.5s;
+}
+
+/* css for items which added */
+.gridContainer {
+  /* border: 1px solid red; */
+  display: grid;
+  width: 75%;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-gap: 5rem; */
+}
+.gridContainer div {
+  border: 1px solid black;
+  margin: 5% 10%;
+  height: 24rem;
+  position: relative;
+  /* background-image: url(https://via.placeholder.com/150/FF0000/808080/?text=Down.com); */
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.items > .details {
+  width: 80%;
+  height: 75% !important;
+  font-size: 1.6rem;
+  font-weight: 900;
+  border: none;
+}
+.details > p {
+  margin-bottom: 1rem;
+}
+.gridContainer > .items > .view,
+.gridContainer > .items > .update,
+.gridContainer > .items > .remove {
+  width: 30%;
+  height: 13%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: rgb(20, 238, 20);
+}
+.items > .view:hover {
+  background: rgb(20, 238, 20);
+  color: white;
+  border: none;
+}
+.items > .update:hover {
+  background: rgb(20, 238, 20);
+  color: white;
+  border: none;
+}
+.items > .remove:hover {
+  background: rgb(20, 238, 20);
+  color: white;
+  border: none;
+}
+
+.gridContainer > .items > div:nth-child(2) {
+  left: -2rem;
+  bottom: 0;
+}
+.gridContainer > .items > div:last-child {
+  right: -2rem;
+  bottom: 0;
+}
+.gridContainer > .items > div:nth-child(3) {
+  bottom: 0;
+  left: 25%;
+}
